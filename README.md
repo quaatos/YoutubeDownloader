@@ -1,4 +1,4 @@
-This is a simple YT-DLP GUI written in C# with one goal: KEEPING. IT. SIMPLE.
+This is a simple YT-DLP GUI written in C# with one goal: KEEPING. IT. SIMPLE.<br>
 It simplifies all the command parameters to download both audio and video.
 
 ##### Paste these executables in the same directory as the exe.
