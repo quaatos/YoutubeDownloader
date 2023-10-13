@@ -31,17 +31,14 @@ partial class Form1
         components = new System.ComponentModel.Container();
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
         youtube_url = new TextBox();
-        label1 = new Label();
         notifyIcon1 = new NotifyIcon(components);
         mp3_checkbox = new CheckBox();
         mp4_checkbox = new CheckBox();
         button1 = new Button();
         path = new TextBox();
-        label2 = new Label();
         openFileDialog1 = new OpenFileDialog();
         FileDialog = new Button();
         custom_filename = new TextBox();
-        label3 = new Label();
         groupBox1 = new GroupBox();
         YoutubeTitle = new CheckBox();
         youtubeID = new CheckBox();
@@ -59,21 +56,12 @@ partial class Form1
         youtube_url.BorderStyle = BorderStyle.FixedSingle;
         youtube_url.Cursor = Cursors.IBeam;
         youtube_url.Font = new Font("Segoe MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
-        youtube_url.Location = new Point(14, 59);
+        youtube_url.Location = new Point(468, 24);
         youtube_url.Margin = new Padding(3, 4, 3, 4);
         youtube_url.Name = "youtube_url";
+        youtube_url.PlaceholderText = "URL";
         youtube_url.Size = new Size(870, 44);
         youtube_url.TabIndex = 0;
-        // 
-        // label1
-        // 
-        label1.AutoSize = true;
-        label1.Font = new Font("Segoe UI Historic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-        label1.Location = new Point(14, 14);
-        label1.Name = "label1";
-        label1.Size = new Size(192, 41);
-        label1.TabIndex = 1;
-        label1.Text = "Youtube URL";
         // 
         // notifyIcon1
         // 
@@ -83,8 +71,7 @@ partial class Form1
         // mp3_checkbox
         // 
         mp3_checkbox.AutoSize = true;
-        mp3_checkbox.BackColor = Color.Gray;
-        mp3_checkbox.Location = new Point(24, 63);
+        mp3_checkbox.Location = new Point(44, 47);
         mp3_checkbox.Margin = new Padding(3, 4, 3, 4);
         mp3_checkbox.Name = "mp3_checkbox";
         mp3_checkbox.Size = new Size(71, 24);
@@ -96,8 +83,7 @@ partial class Form1
         // mp4_checkbox
         // 
         mp4_checkbox.AutoSize = true;
-        mp4_checkbox.BackColor = Color.Gray;
-        mp4_checkbox.Location = new Point(24, 94);
+        mp4_checkbox.Location = new Point(45, 79);
         mp4_checkbox.Margin = new Padding(3, 4, 3, 4);
         mp4_checkbox.Name = "mp4_checkbox";
         mp4_checkbox.Size = new Size(70, 24);
@@ -108,13 +94,17 @@ partial class Form1
         // 
         // button1
         // 
-        button1.BackColor = Color.DarkBlue;
+        button1.BackColor = Color.White;
         button1.Cursor = Cursors.Hand;
-        button1.ForeColor = Color.LightYellow;
-        button1.Location = new Point(81, 362);
+        button1.FlatAppearance.BorderColor = Color.LimeGreen;
+        button1.FlatAppearance.BorderSize = 0;
+        button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 192, 192);
+        button1.Font = new Font("Segoe UI Symbol", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+        button1.ForeColor = Color.FromArgb(0, 0, 64);
+        button1.Location = new Point(6, 432);
         button1.Margin = new Padding(3, 4, 3, 4);
         button1.Name = "button1";
-        button1.Size = new Size(174, 44);
+        button1.Size = new Size(438, 73);
         button1.TabIndex = 5;
         button1.Text = "Download";
         button1.UseVisualStyleBackColor = false;
@@ -128,21 +118,12 @@ partial class Form1
         path.Cursor = Cursors.IBeam;
         path.Font = new Font("Segoe MDL2 Assets", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
         path.ImeMode = ImeMode.On;
-        path.Location = new Point(14, 152);
+        path.Location = new Point(468, 73);
         path.Margin = new Padding(3, 4, 3, 4);
         path.Name = "path";
+        path.PlaceholderText = "Output folder";
         path.Size = new Size(870, 44);
         path.TabIndex = 6;
-        // 
-        // label2
-        // 
-        label2.AutoSize = true;
-        label2.Font = new Font("Segoe UI Historic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-        label2.Location = new Point(12, 107);
-        label2.Name = "label2";
-        label2.Size = new Size(235, 41);
-        label2.TabIndex = 7;
-        label2.Text = "Download PATH";
         // 
         // openFileDialog1
         // 
@@ -150,12 +131,12 @@ partial class Form1
         // 
         // FileDialog
         // 
-        FileDialog.BackColor = Color.DarkBlue;
-        FileDialog.ForeColor = SystemColors.ActiveBorder;
-        FileDialog.Location = new Point(710, 152);
+        FileDialog.BackColor = Color.WhiteSmoke;
+        FileDialog.ForeColor = SystemColors.ActiveCaptionText;
+        FileDialog.Location = new Point(1164, 73);
         FileDialog.Margin = new Padding(3, 4, 3, 4);
         FileDialog.Name = "FileDialog";
-        FileDialog.Size = new Size(174, 45);
+        FileDialog.Size = new Size(174, 44);
         FileDialog.TabIndex = 8;
         FileDialog.Text = "Select";
         FileDialog.UseVisualStyleBackColor = false;
@@ -169,21 +150,12 @@ partial class Form1
         custom_filename.Cursor = Cursors.IBeam;
         custom_filename.Font = new Font("Segoe MDL2 Assets", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
         custom_filename.ImeMode = ImeMode.On;
-        custom_filename.Location = new Point(14, 249);
+        custom_filename.Location = new Point(468, 125);
         custom_filename.Margin = new Padding(3, 4, 3, 4);
         custom_filename.Name = "custom_filename";
+        custom_filename.PlaceholderText = "Filename";
         custom_filename.Size = new Size(870, 44);
         custom_filename.TabIndex = 9;
-        // 
-        // label3
-        // 
-        label3.AutoSize = true;
-        label3.Font = new Font("Segoe UI Historic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-        label3.Location = new Point(12, 204);
-        label3.Name = "label3";
-        label3.Size = new Size(137, 41);
-        label3.TabIndex = 10;
-        label3.Text = "Filename";
         // 
         // groupBox1
         // 
@@ -197,10 +169,10 @@ partial class Form1
         groupBox1.Controls.Add(mp3_checkbox);
         groupBox1.Controls.Add(mp4_checkbox);
         groupBox1.Controls.Add(button1);
-        groupBox1.ForeColor = Color.Lime;
-        groupBox1.Location = new Point(991, 59);
+        groupBox1.ForeColor = Color.White;
+        groupBox1.Location = new Point(12, 14);
         groupBox1.Name = "groupBox1";
-        groupBox1.Size = new Size(347, 413);
+        groupBox1.Size = new Size(450, 512);
         groupBox1.TabIndex = 11;
         groupBox1.TabStop = false;
         groupBox1.Text = "Configuration";
@@ -208,8 +180,7 @@ partial class Form1
         // YoutubeTitle
         // 
         YoutubeTitle.AutoSize = true;
-        YoutubeTitle.BackColor = Color.Gray;
-        YoutubeTitle.Location = new Point(24, 258);
+        YoutubeTitle.Location = new Point(243, 143);
         YoutubeTitle.Margin = new Padding(3, 4, 3, 4);
         YoutubeTitle.Name = "YoutubeTitle";
         YoutubeTitle.Size = new Size(100, 24);
@@ -221,8 +192,7 @@ partial class Form1
         // youtubeID
         // 
         youtubeID.AutoSize = true;
-        youtubeID.BackColor = Color.Gray;
-        youtubeID.Location = new Point(24, 226);
+        youtubeID.Location = new Point(243, 111);
         youtubeID.Margin = new Padding(3, 4, 3, 4);
         youtubeID.Name = "youtubeID";
         youtubeID.Size = new Size(104, 24);
@@ -234,8 +204,7 @@ partial class Form1
         // RandomID
         // 
         RandomID.AutoSize = true;
-        RandomID.BackColor = Color.Gray;
-        RandomID.Location = new Point(24, 194);
+        RandomID.Location = new Point(243, 79);
         RandomID.Margin = new Padding(3, 4, 3, 4);
         RandomID.Name = "RandomID";
         RandomID.Size = new Size(106, 24);
@@ -247,8 +216,7 @@ partial class Form1
         // CustomName
         // 
         CustomName.AutoSize = true;
-        CustomName.BackColor = Color.Gray;
-        CustomName.Location = new Point(24, 162);
+        CustomName.Location = new Point(243, 47);
         CustomName.Margin = new Padding(3, 4, 3, 4);
         CustomName.Name = "CustomName";
         CustomName.Size = new Size(145, 24);
@@ -260,8 +228,7 @@ partial class Form1
         // label5
         // 
         label5.AutoSize = true;
-        label5.BackColor = Color.Gray;
-        label5.Location = new Point(6, 134);
+        label5.Location = new Point(194, 23);
         label5.Name = "label5";
         label5.Size = new Size(69, 20);
         label5.TabIndex = 6;
@@ -270,8 +237,9 @@ partial class Form1
         // label4
         // 
         label4.AutoSize = true;
-        label4.BackColor = Color.Gray;
-        label4.Location = new Point(6, 39);
+        label4.BackColor = Color.Black;
+        label4.ForeColor = Color.White;
+        label4.Location = new Point(6, 23);
         label4.Name = "label4";
         label4.Size = new Size(56, 20);
         label4.TabIndex = 5;
@@ -282,14 +250,11 @@ partial class Form1
         AutoScaleDimensions = new SizeF(8F, 20F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.Black;
-        ClientSize = new Size(1350, 484);
+        ClientSize = new Size(1350, 538);
         Controls.Add(groupBox1);
-        Controls.Add(label3);
         Controls.Add(custom_filename);
         Controls.Add(FileDialog);
-        Controls.Add(label2);
         Controls.Add(path);
-        Controls.Add(label1);
         Controls.Add(youtube_url);
         ForeColor = SystemColors.ActiveBorder;
         FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -307,16 +272,13 @@ partial class Form1
     #endregion
 
     private TextBox youtube_url;
-    private Label label1;
     private NotifyIcon notifyIcon1;
     private CheckBox mp3_checkbox;
     private CheckBox mp4_checkbox;
     private Button button1;
     private TextBox path;
-    private Label label2;
     private OpenFileDialog openFileDialog1;
     private TextBox textBox1;
-    private Label label3;
     private GroupBox groupBox1;
     private Label label4;
     private TextBox custom_filename;
